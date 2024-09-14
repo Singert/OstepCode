@@ -1,0 +1,12 @@
+/home/singer/learn/ostp/build/CMakeFiles/hw.dir
+/home/singer/learn/ostp/build/CMakeFiles/cpu.dir
+/home/singer/learn/ostp/build/CMakeFiles/mem.dir
+/home/singer/learn/ostp/build/CMakeFiles/threads.dir
+/home/singer/learn/ostp/build/CMakeFiles/p1.dir
+/home/singer/learn/ostp/build/CMakeFiles/p2.dir
+/home/singer/learn/ostp/build/CMakeFiles/p3.dir
+/home/singer/learn/ostp/build/CMakeFiles/p4.dir
+/home/singer/learn/ostp/build/CMakeFiles/5.1.dir
+/home/singer/learn/ostp/build/CMakeFiles/5.2.dir
+/home/singer/learn/ostp/build/CMakeFiles/edit_cache.dir
+/home/singer/learn/ostp/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/p5.dir/homework/5.1.o -o p5 

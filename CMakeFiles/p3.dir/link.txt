@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/p3.dir/p3.o -o p3 

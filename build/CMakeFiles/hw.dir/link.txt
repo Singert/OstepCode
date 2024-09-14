@@ -1,0 +1,1 @@
+/usr/bin/g++  -pthread -g -rdynamic CMakeFiles/hw.dir/hw.o -o hw 

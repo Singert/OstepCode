@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/p2.dir/p2.o -o p2 

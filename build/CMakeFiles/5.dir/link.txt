@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/5.dir/homework/5.1.o -o 5 

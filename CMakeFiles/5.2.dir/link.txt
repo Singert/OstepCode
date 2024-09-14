@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/5.2.dir/homework/5.2.o -o 5.2 

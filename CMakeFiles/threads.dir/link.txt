@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/threads.dir/threads.o -o threads 

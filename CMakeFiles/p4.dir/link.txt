@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/p4.dir/p4.o -o p4 

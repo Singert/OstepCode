@@ -1,0 +1,18 @@
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+project(OSTP)
+
+add_executable(hw hw.cpp)
+add_executable(cpu cpu.c)
+add_executable(mem mem.c)
+add_executable(threads threads.c)
+add_executable(p1 p1.c)
+add_executable(p2 p2.c)
+add_executable(p3 p3.c)
+add_executable(p4 p4.c)
+add_executable(5.1 homework/5.1.c)
+add_executable(5.2 homework/5.2.c)
+
+add_compile_options(-Wall -Wextra -Werror -pthread)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+# add_library()
+# add_executable()
