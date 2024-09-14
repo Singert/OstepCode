@@ -73,15 +73,15 @@ CMakeFiles/threads.dir/examples/threads.o: CMakeFiles/threads.dir/flags.make
 CMakeFiles/threads.dir/examples/threads.o: /home/singer/learn/ostp/examples/threads.c
 CMakeFiles/threads.dir/examples/threads.o: CMakeFiles/threads.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/threads.dir/examples/threads.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/threads.dir/examples/threads.o -MF CMakeFiles/threads.dir/examples/threads.o.d -o CMakeFiles/threads.dir/examples/threads.o -c /home/singer/learn/ostp/examples/threads.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/threads.dir/examples/threads.o -MF CMakeFiles/threads.dir/examples/threads.o.d -o CMakeFiles/threads.dir/examples/threads.o -c /home/singer/learn/ostp/examples/threads.c
 
 CMakeFiles/threads.dir/examples/threads.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threads.dir/examples/threads.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/threads.c > CMakeFiles/threads.dir/examples/threads.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/threads.c > CMakeFiles/threads.dir/examples/threads.i
 
 CMakeFiles/threads.dir/examples/threads.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threads.dir/examples/threads.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/threads.c -o CMakeFiles/threads.dir/examples/threads.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/threads.c -o CMakeFiles/threads.dir/examples/threads.s
 
 # Object files for target threads
 threads_OBJECTS = \

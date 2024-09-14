@@ -8,9 +8,14 @@ add_executable(p1 examples/p1.c)
 add_executable(p2 examples/p2.c)
 add_executable(p3 examples/p3.c)
 add_executable(p4 examples/p4.c)
+
+
 add_executable(5.1 homework/5.1.c)
 add_executable(5.2 homework/5.2.c)
 add_executable(5.3 homework/5.3.c)
+add_executable(5.5 homework/5.5.c)
+add_executable(5.6 homework/5.6.c)
+add_executable(5.7 homework/5.7.c)
 
 add_compile_options(-Wall -Wextra -Werror -pthread)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

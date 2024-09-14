@@ -246,6 +246,45 @@ p4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/build
 .PHONY : 5.3/fast
 
+#=============================================================================
+# Target rules for targets named 5.5
+
+# Build rule for target.
+5.5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5.5
+.PHONY : 5.5
+
+# fast build rule for target.
+5.5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/build
+.PHONY : 5.5/fast
+
+#=============================================================================
+# Target rules for targets named 5.6
+
+# Build rule for target.
+5.6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5.6
+.PHONY : 5.6
+
+# fast build rule for target.
+5.6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/build
+.PHONY : 5.6/fast
+
+#=============================================================================
+# Target rules for targets named 5.7
+
+# Build rule for target.
+5.7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5.7
+.PHONY : 5.7
+
+# fast build rule for target.
+5.7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/build
+.PHONY : 5.7/fast
+
 # target to build an object file
 examples/cpu.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/cpu.o
@@ -396,6 +435,51 @@ homework/5.3.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/5.3.s
 .PHONY : homework/5.3.s
 
+# target to build an object file
+homework/5.5.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/5.5.o
+.PHONY : homework/5.5.o
+
+# target to preprocess a source file
+homework/5.5.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/5.5.i
+.PHONY : homework/5.5.i
+
+# target to generate assembly for a file
+homework/5.5.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/5.5.s
+.PHONY : homework/5.5.s
+
+# target to build an object file
+homework/5.6.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/5.6.o
+.PHONY : homework/5.6.o
+
+# target to preprocess a source file
+homework/5.6.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/5.6.i
+.PHONY : homework/5.6.i
+
+# target to generate assembly for a file
+homework/5.6.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/5.6.s
+.PHONY : homework/5.6.s
+
+# target to build an object file
+homework/5.7.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/5.7.o
+.PHONY : homework/5.7.o
+
+# target to preprocess a source file
+homework/5.7.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/5.7.i
+.PHONY : homework/5.7.i
+
+# target to generate assembly for a file
+homework/5.7.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/5.7.s
+.PHONY : homework/5.7.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -407,6 +491,9 @@ help:
 	@echo "... 5.1"
 	@echo "... 5.2"
 	@echo "... 5.3"
+	@echo "... 5.5"
+	@echo "... 5.6"
+	@echo "... 5.7"
 	@echo "... cpu"
 	@echo "... mem"
 	@echo "... p1"
@@ -444,6 +531,15 @@ help:
 	@echo "... homework/5.3.o"
 	@echo "... homework/5.3.i"
 	@echo "... homework/5.3.s"
+	@echo "... homework/5.5.o"
+	@echo "... homework/5.5.i"
+	@echo "... homework/5.5.s"
+	@echo "... homework/5.6.o"
+	@echo "... homework/5.6.i"
+	@echo "... homework/5.6.s"
+	@echo "... homework/5.7.o"
+	@echo "... homework/5.7.i"
+	@echo "... homework/5.7.s"
 .PHONY : help
 
 

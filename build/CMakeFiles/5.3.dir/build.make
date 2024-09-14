@@ -73,15 +73,15 @@ CMakeFiles/5.3.dir/homework/5.3.o: CMakeFiles/5.3.dir/flags.make
 CMakeFiles/5.3.dir/homework/5.3.o: /home/singer/learn/ostp/homework/5.3.c
 CMakeFiles/5.3.dir/homework/5.3.o: CMakeFiles/5.3.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/5.3.dir/homework/5.3.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/5.3.dir/homework/5.3.o -MF CMakeFiles/5.3.dir/homework/5.3.o.d -o CMakeFiles/5.3.dir/homework/5.3.o -c /home/singer/learn/ostp/homework/5.3.c
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/5.3.dir/homework/5.3.o -MF CMakeFiles/5.3.dir/homework/5.3.o.d -o CMakeFiles/5.3.dir/homework/5.3.o -c /home/singer/learn/ostp/homework/5.3.c
 
 CMakeFiles/5.3.dir/homework/5.3.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/5.3.dir/homework/5.3.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/homework/5.3.c > CMakeFiles/5.3.dir/homework/5.3.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/homework/5.3.c > CMakeFiles/5.3.dir/homework/5.3.i
 
 CMakeFiles/5.3.dir/homework/5.3.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5.3.dir/homework/5.3.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/homework/5.3.c -o CMakeFiles/5.3.dir/homework/5.3.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/homework/5.3.c -o CMakeFiles/5.3.dir/homework/5.3.s
 
 # Object files for target 5.3
 5_3_OBJECTS = \

@@ -1,1 +1,1 @@
-/usr/bin/cc -rdynamic CMakeFiles/p3.dir/examples/p3.o -o p3 
+/usr/bin/gcc -g -rdynamic CMakeFiles/p3.dir/examples/p3.o -o p3 

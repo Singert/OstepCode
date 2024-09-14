@@ -1,0 +1,1 @@
+/usr/bin/gcc -g -rdynamic CMakeFiles/5.6.dir/homework/5.6.o -o 5.6 
