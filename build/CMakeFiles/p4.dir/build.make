@@ -69,28 +69,28 @@ include CMakeFiles/p4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/p4.dir/flags.make
 
-CMakeFiles/p4.dir/p4.o: CMakeFiles/p4.dir/flags.make
-CMakeFiles/p4.dir/p4.o: /home/singer/learn/ostp/p4.c
-CMakeFiles/p4.dir/p4.o: CMakeFiles/p4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p4.dir/p4.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/p4.dir/p4.o -MF CMakeFiles/p4.dir/p4.o.d -o CMakeFiles/p4.dir/p4.o -c /home/singer/learn/ostp/p4.c
+CMakeFiles/p4.dir/examples/p4.o: CMakeFiles/p4.dir/flags.make
+CMakeFiles/p4.dir/examples/p4.o: /home/singer/learn/ostp/examples/p4.c
+CMakeFiles/p4.dir/examples/p4.o: CMakeFiles/p4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/p4.dir/examples/p4.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/p4.dir/examples/p4.o -MF CMakeFiles/p4.dir/examples/p4.o.d -o CMakeFiles/p4.dir/examples/p4.o -c /home/singer/learn/ostp/examples/p4.c
 
-CMakeFiles/p4.dir/p4.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4.dir/p4.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/p4.c > CMakeFiles/p4.dir/p4.i
+CMakeFiles/p4.dir/examples/p4.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p4.dir/examples/p4.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/p4.c > CMakeFiles/p4.dir/examples/p4.i
 
-CMakeFiles/p4.dir/p4.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4.dir/p4.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/p4.c -o CMakeFiles/p4.dir/p4.s
+CMakeFiles/p4.dir/examples/p4.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p4.dir/examples/p4.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/p4.c -o CMakeFiles/p4.dir/examples/p4.s
 
 # Object files for target p4
 p4_OBJECTS = \
-"CMakeFiles/p4.dir/p4.o"
+"CMakeFiles/p4.dir/examples/p4.o"
 
 # External object files for target p4
 p4_EXTERNAL_OBJECTS =
 
-p4: CMakeFiles/p4.dir/p4.o
+p4: CMakeFiles/p4.dir/examples/p4.o
 p4: CMakeFiles/p4.dir/build.make
 p4: CMakeFiles/p4.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable p4"

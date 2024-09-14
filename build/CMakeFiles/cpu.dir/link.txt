@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/cpu.dir/cpu.o -o cpu 
+/usr/bin/cc -rdynamic CMakeFiles/cpu.dir/examples/cpu.o -o cpu 

@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/cpu.dir/cpu.o -o cpu 

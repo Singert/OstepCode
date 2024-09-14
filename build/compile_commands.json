@@ -1,52 +1,52 @@
 [
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/g++    -pthread -g -o CMakeFiles/hw.dir/hw.o -c /home/singer/learn/ostp/hw.cpp",
-  "file": "/home/singer/learn/ostp/hw.cpp"
+  "command": "/usr/bin/cc    -o CMakeFiles/cpu.dir/examples/cpu.o -c /home/singer/learn/ostp/examples/cpu.c",
+  "file": "/home/singer/learn/ostp/examples/cpu.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/cpu.dir/cpu.o -c /home/singer/learn/ostp/cpu.c",
-  "file": "/home/singer/learn/ostp/cpu.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/mem.dir/examples/mem.o -c /home/singer/learn/ostp/examples/mem.c",
+  "file": "/home/singer/learn/ostp/examples/mem.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/mem.dir/mem.o -c /home/singer/learn/ostp/mem.c",
-  "file": "/home/singer/learn/ostp/mem.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/threads.dir/examples/threads.o -c /home/singer/learn/ostp/examples/threads.c",
+  "file": "/home/singer/learn/ostp/examples/threads.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/threads.dir/threads.o -c /home/singer/learn/ostp/threads.c",
-  "file": "/home/singer/learn/ostp/threads.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/p1.dir/examples/p1.o -c /home/singer/learn/ostp/examples/p1.c",
+  "file": "/home/singer/learn/ostp/examples/p1.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/p1.dir/p1.o -c /home/singer/learn/ostp/p1.c",
-  "file": "/home/singer/learn/ostp/p1.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/p2.dir/examples/p2.o -c /home/singer/learn/ostp/examples/p2.c",
+  "file": "/home/singer/learn/ostp/examples/p2.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/p2.dir/p2.o -c /home/singer/learn/ostp/p2.c",
-  "file": "/home/singer/learn/ostp/p2.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/p3.dir/examples/p3.o -c /home/singer/learn/ostp/examples/p3.c",
+  "file": "/home/singer/learn/ostp/examples/p3.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/p3.dir/p3.o -c /home/singer/learn/ostp/p3.c",
-  "file": "/home/singer/learn/ostp/p3.c"
+  "command": "/usr/bin/cc    -o CMakeFiles/p4.dir/examples/p4.o -c /home/singer/learn/ostp/examples/p4.c",
+  "file": "/home/singer/learn/ostp/examples/p4.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/p4.dir/p4.o -c /home/singer/learn/ostp/p4.c",
-  "file": "/home/singer/learn/ostp/p4.c"
-},
-{
-  "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/5.1.dir/homework/5.1.o -c /home/singer/learn/ostp/homework/5.1.c",
+  "command": "/usr/bin/cc    -o CMakeFiles/5.1.dir/homework/5.1.o -c /home/singer/learn/ostp/homework/5.1.c",
   "file": "/home/singer/learn/ostp/homework/5.1.c"
 },
 {
   "directory": "/home/singer/learn/ostp/build",
-  "command": "/usr/bin/gcc   -g -o CMakeFiles/5.2.dir/homework/5.2.o -c /home/singer/learn/ostp/homework/5.2.c",
+  "command": "/usr/bin/cc    -o CMakeFiles/5.2.dir/homework/5.2.o -c /home/singer/learn/ostp/homework/5.2.c",
   "file": "/home/singer/learn/ostp/homework/5.2.c"
+},
+{
+  "directory": "/home/singer/learn/ostp/build",
+  "command": "/usr/bin/cc    -o CMakeFiles/5.3.dir/homework/5.3.o -c /home/singer/learn/ostp/homework/5.3.c",
+  "file": "/home/singer/learn/ostp/homework/5.3.c"
 }
 ]

@@ -1,1 +1,0 @@
-/usr/bin/cc -rdynamic CMakeFiles/mem.dir/mem.o -o mem 

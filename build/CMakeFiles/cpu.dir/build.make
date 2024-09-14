@@ -69,28 +69,28 @@ include CMakeFiles/cpu.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cpu.dir/flags.make
 
-CMakeFiles/cpu.dir/cpu.o: CMakeFiles/cpu.dir/flags.make
-CMakeFiles/cpu.dir/cpu.o: /home/singer/learn/ostp/cpu.c
-CMakeFiles/cpu.dir/cpu.o: CMakeFiles/cpu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cpu.dir/cpu.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cpu.dir/cpu.o -MF CMakeFiles/cpu.dir/cpu.o.d -o CMakeFiles/cpu.dir/cpu.o -c /home/singer/learn/ostp/cpu.c
+CMakeFiles/cpu.dir/examples/cpu.o: CMakeFiles/cpu.dir/flags.make
+CMakeFiles/cpu.dir/examples/cpu.o: /home/singer/learn/ostp/examples/cpu.c
+CMakeFiles/cpu.dir/examples/cpu.o: CMakeFiles/cpu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cpu.dir/examples/cpu.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cpu.dir/examples/cpu.o -MF CMakeFiles/cpu.dir/examples/cpu.o.d -o CMakeFiles/cpu.dir/examples/cpu.o -c /home/singer/learn/ostp/examples/cpu.c
 
-CMakeFiles/cpu.dir/cpu.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpu.dir/cpu.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/cpu.c > CMakeFiles/cpu.dir/cpu.i
+CMakeFiles/cpu.dir/examples/cpu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cpu.dir/examples/cpu.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/cpu.c > CMakeFiles/cpu.dir/examples/cpu.i
 
-CMakeFiles/cpu.dir/cpu.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpu.dir/cpu.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/cpu.c -o CMakeFiles/cpu.dir/cpu.s
+CMakeFiles/cpu.dir/examples/cpu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cpu.dir/examples/cpu.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/cpu.c -o CMakeFiles/cpu.dir/examples/cpu.s
 
 # Object files for target cpu
 cpu_OBJECTS = \
-"CMakeFiles/cpu.dir/cpu.o"
+"CMakeFiles/cpu.dir/examples/cpu.o"
 
 # External object files for target cpu
 cpu_EXTERNAL_OBJECTS =
 
-cpu: CMakeFiles/cpu.dir/cpu.o
+cpu: CMakeFiles/cpu.dir/examples/cpu.o
 cpu: CMakeFiles/cpu.dir/build.make
 cpu: CMakeFiles/cpu.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cpu"

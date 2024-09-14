@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hw
-
-# Build rule for target.
-hw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw
-.PHONY : hw
-
-# fast build rule for target.
-hw/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw.dir/build.make CMakeFiles/hw.dir/build
-.PHONY : hw/fast
-
-#=============================================================================
 # Target rules for targets named cpu
 
 # Build rule for target.
@@ -246,20 +233,123 @@ p4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/build
 .PHONY : 5.2/fast
 
+#=============================================================================
+# Target rules for targets named 5.3
+
+# Build rule for target.
+5.3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 5.3
+.PHONY : 5.3
+
+# fast build rule for target.
+5.3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/build
+.PHONY : 5.3/fast
+
 # target to build an object file
-cpu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/cpu.o
-.PHONY : cpu.o
+examples/cpu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/cpu.o
+.PHONY : examples/cpu.o
 
 # target to preprocess a source file
-cpu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/cpu.i
-.PHONY : cpu.i
+examples/cpu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/cpu.i
+.PHONY : examples/cpu.i
 
 # target to generate assembly for a file
-cpu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/cpu.s
-.PHONY : cpu.s
+examples/cpu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/cpu.s
+.PHONY : examples/cpu.s
+
+# target to build an object file
+examples/mem.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/mem.o
+.PHONY : examples/mem.o
+
+# target to preprocess a source file
+examples/mem.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/mem.i
+.PHONY : examples/mem.i
+
+# target to generate assembly for a file
+examples/mem.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/mem.s
+.PHONY : examples/mem.s
+
+# target to build an object file
+examples/p1.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/p1.o
+.PHONY : examples/p1.o
+
+# target to preprocess a source file
+examples/p1.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/p1.i
+.PHONY : examples/p1.i
+
+# target to generate assembly for a file
+examples/p1.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/p1.s
+.PHONY : examples/p1.s
+
+# target to build an object file
+examples/p2.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/p2.o
+.PHONY : examples/p2.o
+
+# target to preprocess a source file
+examples/p2.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/p2.i
+.PHONY : examples/p2.i
+
+# target to generate assembly for a file
+examples/p2.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/p2.s
+.PHONY : examples/p2.s
+
+# target to build an object file
+examples/p3.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/p3.o
+.PHONY : examples/p3.o
+
+# target to preprocess a source file
+examples/p3.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/p3.i
+.PHONY : examples/p3.i
+
+# target to generate assembly for a file
+examples/p3.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/p3.s
+.PHONY : examples/p3.s
+
+# target to build an object file
+examples/p4.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/p4.o
+.PHONY : examples/p4.o
+
+# target to preprocess a source file
+examples/p4.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/p4.i
+.PHONY : examples/p4.i
+
+# target to generate assembly for a file
+examples/p4.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/p4.s
+.PHONY : examples/p4.s
+
+# target to build an object file
+examples/threads.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/threads.o
+.PHONY : examples/threads.o
+
+# target to preprocess a source file
+examples/threads.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/threads.i
+.PHONY : examples/threads.i
+
+# target to generate assembly for a file
+examples/threads.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/threads.s
+.PHONY : examples/threads.s
 
 # target to build an object file
 homework/5.1.o:
@@ -292,109 +382,19 @@ homework/5.2.s:
 .PHONY : homework/5.2.s
 
 # target to build an object file
-hw.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw.dir/build.make CMakeFiles/hw.dir/hw.o
-.PHONY : hw.o
+homework/5.3.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/5.3.o
+.PHONY : homework/5.3.o
 
 # target to preprocess a source file
-hw.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw.dir/build.make CMakeFiles/hw.dir/hw.i
-.PHONY : hw.i
+homework/5.3.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/5.3.i
+.PHONY : homework/5.3.i
 
 # target to generate assembly for a file
-hw.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw.dir/build.make CMakeFiles/hw.dir/hw.s
-.PHONY : hw.s
-
-# target to build an object file
-mem.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/mem.o
-.PHONY : mem.o
-
-# target to preprocess a source file
-mem.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/mem.i
-.PHONY : mem.i
-
-# target to generate assembly for a file
-mem.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/mem.s
-.PHONY : mem.s
-
-# target to build an object file
-p1.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/p1.o
-.PHONY : p1.o
-
-# target to preprocess a source file
-p1.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/p1.i
-.PHONY : p1.i
-
-# target to generate assembly for a file
-p1.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/p1.s
-.PHONY : p1.s
-
-# target to build an object file
-p2.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/p2.o
-.PHONY : p2.o
-
-# target to preprocess a source file
-p2.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/p2.i
-.PHONY : p2.i
-
-# target to generate assembly for a file
-p2.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/p2.s
-.PHONY : p2.s
-
-# target to build an object file
-p3.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/p3.o
-.PHONY : p3.o
-
-# target to preprocess a source file
-p3.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/p3.i
-.PHONY : p3.i
-
-# target to generate assembly for a file
-p3.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/p3.s
-.PHONY : p3.s
-
-# target to build an object file
-p4.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/p4.o
-.PHONY : p4.o
-
-# target to preprocess a source file
-p4.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/p4.i
-.PHONY : p4.i
-
-# target to generate assembly for a file
-p4.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/p4.s
-.PHONY : p4.s
-
-# target to build an object file
-threads.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/threads.o
-.PHONY : threads.o
-
-# target to preprocess a source file
-threads.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/threads.i
-.PHONY : threads.i
-
-# target to generate assembly for a file
-threads.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/threads.s
-.PHONY : threads.s
+homework/5.3.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/5.3.s
+.PHONY : homework/5.3.s
 
 # Help Target
 help:
@@ -406,44 +406,44 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... 5.1"
 	@echo "... 5.2"
+	@echo "... 5.3"
 	@echo "... cpu"
-	@echo "... hw"
 	@echo "... mem"
 	@echo "... p1"
 	@echo "... p2"
 	@echo "... p3"
 	@echo "... p4"
 	@echo "... threads"
-	@echo "... cpu.o"
-	@echo "... cpu.i"
-	@echo "... cpu.s"
+	@echo "... examples/cpu.o"
+	@echo "... examples/cpu.i"
+	@echo "... examples/cpu.s"
+	@echo "... examples/mem.o"
+	@echo "... examples/mem.i"
+	@echo "... examples/mem.s"
+	@echo "... examples/p1.o"
+	@echo "... examples/p1.i"
+	@echo "... examples/p1.s"
+	@echo "... examples/p2.o"
+	@echo "... examples/p2.i"
+	@echo "... examples/p2.s"
+	@echo "... examples/p3.o"
+	@echo "... examples/p3.i"
+	@echo "... examples/p3.s"
+	@echo "... examples/p4.o"
+	@echo "... examples/p4.i"
+	@echo "... examples/p4.s"
+	@echo "... examples/threads.o"
+	@echo "... examples/threads.i"
+	@echo "... examples/threads.s"
 	@echo "... homework/5.1.o"
 	@echo "... homework/5.1.i"
 	@echo "... homework/5.1.s"
 	@echo "... homework/5.2.o"
 	@echo "... homework/5.2.i"
 	@echo "... homework/5.2.s"
-	@echo "... hw.o"
-	@echo "... hw.i"
-	@echo "... hw.s"
-	@echo "... mem.o"
-	@echo "... mem.i"
-	@echo "... mem.s"
-	@echo "... p1.o"
-	@echo "... p1.i"
-	@echo "... p1.s"
-	@echo "... p2.o"
-	@echo "... p2.i"
-	@echo "... p2.s"
-	@echo "... p3.o"
-	@echo "... p3.i"
-	@echo "... p3.s"
-	@echo "... p4.o"
-	@echo "... p4.i"
-	@echo "... p4.s"
-	@echo "... threads.o"
-	@echo "... threads.i"
-	@echo "... threads.s"
+	@echo "... homework/5.3.o"
+	@echo "... homework/5.3.i"
+	@echo "... homework/5.3.s"
 .PHONY : help
 
 

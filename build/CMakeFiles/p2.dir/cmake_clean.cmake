@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p2.dir/p2.o"
-  "CMakeFiles/p2.dir/p2.o.d"
+  "CMakeFiles/p2.dir/examples/p2.o"
+  "CMakeFiles/p2.dir/examples/p2.o.d"
   "p2"
   "p2.pdb"
 )

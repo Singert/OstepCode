@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mem.dir/mem.o"
-  "CMakeFiles/mem.dir/mem.o.d"
+  "CMakeFiles/mem.dir/examples/mem.o"
+  "CMakeFiles/mem.dir/examples/mem.o.d"
   "mem"
   "mem.pdb"
 )

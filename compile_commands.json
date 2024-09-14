@@ -48,5 +48,10 @@
   "directory": "/home/singer/learn/ostp",
   "command": "/usr/bin/cc    -o CMakeFiles/5.2.dir/homework/5.2.o -c /home/singer/learn/ostp/homework/5.2.c",
   "file": "/home/singer/learn/ostp/homework/5.2.c"
+},
+{
+  "directory": "/home/singer/learn/ostp",
+  "command": "/usr/bin/cc    -o CMakeFiles/5.3.dir/homework/5.3.o -c /home/singer/learn/ostp/homework/5.3.c",
+  "file": "/home/singer/learn/ostp/homework/5.3.c"
 }
 ]
