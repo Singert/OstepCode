@@ -18,6 +18,7 @@ add_executable(5.6 homework/S5/5.6.c)
 add_executable(5.7 homework/S5/5.7.c)
 add_executable(5.8 homework/S5/5.8.c)
 add_executable(test homework/S5/test.c)
+add_executable(measurement homework/S6/measurement.c)
 
 add_compile_options(-Wall -Wextra -Werror -pthread)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

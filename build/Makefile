@@ -311,6 +311,19 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+#=============================================================================
+# Target rules for targets named measurement
+
+# Build rule for target.
+measurement: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 measurement
+.PHONY : measurement
+
+# fast build rule for target.
+measurement/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/build
+.PHONY : measurement/fast
+
 # target to build an object file
 examples/S5/cpu.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.o
@@ -536,6 +549,21 @@ homework/S5/test.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.s
 .PHONY : homework/S5/test.s
 
+# target to build an object file
+homework/S6/measurement.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.o
+.PHONY : homework/S6/measurement.o
+
+# target to preprocess a source file
+homework/S6/measurement.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.i
+.PHONY : homework/S6/measurement.i
+
+# target to generate assembly for a file
+homework/S6/measurement.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.s
+.PHONY : homework/S6/measurement.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -552,6 +580,7 @@ help:
 	@echo "... 5.7"
 	@echo "... 5.8"
 	@echo "... cpu"
+	@echo "... measurement"
 	@echo "... mem"
 	@echo "... p1"
 	@echo "... p2"
@@ -604,6 +633,9 @@ help:
 	@echo "... homework/S5/test.o"
 	@echo "... homework/S5/test.i"
 	@echo "... homework/S5/test.s"
+	@echo "... homework/S6/measurement.o"
+	@echo "... homework/S6/measurement.i"
+	@echo "... homework/S6/measurement.s"
 .PHONY : help
 
 

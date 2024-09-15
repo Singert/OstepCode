@@ -73,5 +73,10 @@
   "directory": "/home/singer/learn/ostp/build",
   "command": "/usr/bin/gcc   -g -o CMakeFiles/test.dir/homework/S5/test.o -c /home/singer/learn/ostp/homework/S5/test.c",
   "file": "/home/singer/learn/ostp/homework/S5/test.c"
+},
+{
+  "directory": "/home/singer/learn/ostp/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/measurement.dir/homework/S6/measurement.o -c /home/singer/learn/ostp/homework/S6/measurement.c",
+  "file": "/home/singer/learn/ostp/homework/S6/measurement.c"
 }
 ]
