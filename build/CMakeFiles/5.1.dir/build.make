@@ -69,28 +69,28 @@ include CMakeFiles/5.1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/5.1.dir/flags.make
 
-CMakeFiles/5.1.dir/homework/5.1.o: CMakeFiles/5.1.dir/flags.make
-CMakeFiles/5.1.dir/homework/5.1.o: /home/singer/learn/ostp/homework/5.1.c
-CMakeFiles/5.1.dir/homework/5.1.o: CMakeFiles/5.1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/5.1.dir/homework/5.1.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/5.1.dir/homework/5.1.o -MF CMakeFiles/5.1.dir/homework/5.1.o.d -o CMakeFiles/5.1.dir/homework/5.1.o -c /home/singer/learn/ostp/homework/5.1.c
+CMakeFiles/5.1.dir/homework/S5/5.1.o: CMakeFiles/5.1.dir/flags.make
+CMakeFiles/5.1.dir/homework/S5/5.1.o: /home/singer/learn/ostp/homework/S5/5.1.c
+CMakeFiles/5.1.dir/homework/S5/5.1.o: CMakeFiles/5.1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/5.1.dir/homework/S5/5.1.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/5.1.dir/homework/S5/5.1.o -MF CMakeFiles/5.1.dir/homework/S5/5.1.o.d -o CMakeFiles/5.1.dir/homework/S5/5.1.o -c /home/singer/learn/ostp/homework/S5/5.1.c
 
-CMakeFiles/5.1.dir/homework/5.1.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/5.1.dir/homework/5.1.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/homework/5.1.c > CMakeFiles/5.1.dir/homework/5.1.i
+CMakeFiles/5.1.dir/homework/S5/5.1.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/5.1.dir/homework/S5/5.1.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/homework/S5/5.1.c > CMakeFiles/5.1.dir/homework/S5/5.1.i
 
-CMakeFiles/5.1.dir/homework/5.1.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5.1.dir/homework/5.1.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/homework/5.1.c -o CMakeFiles/5.1.dir/homework/5.1.s
+CMakeFiles/5.1.dir/homework/S5/5.1.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/5.1.dir/homework/S5/5.1.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/homework/S5/5.1.c -o CMakeFiles/5.1.dir/homework/S5/5.1.s
 
 # Object files for target 5.1
 5_1_OBJECTS = \
-"CMakeFiles/5.1.dir/homework/5.1.o"
+"CMakeFiles/5.1.dir/homework/S5/5.1.o"
 
 # External object files for target 5.1
 5_1_EXTERNAL_OBJECTS =
 
-5.1: CMakeFiles/5.1.dir/homework/5.1.o
+5.1: CMakeFiles/5.1.dir/homework/S5/5.1.o
 5.1: CMakeFiles/5.1.dir/build.make
 5.1: CMakeFiles/5.1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable 5.1"

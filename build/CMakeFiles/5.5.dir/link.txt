@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/5.5.dir/homework/5.5.o -o 5.5 
+/usr/bin/gcc -g -rdynamic CMakeFiles/5.5.dir/homework/S5/5.5.o -o 5.5 

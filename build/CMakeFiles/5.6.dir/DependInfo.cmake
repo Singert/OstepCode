@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/singer/learn/ostp/homework/5.6.c" "CMakeFiles/5.6.dir/homework/5.6.o" "gcc" "CMakeFiles/5.6.dir/homework/5.6.o.d"
+  "/home/singer/learn/ostp/homework/S5/5.6.c" "CMakeFiles/5.6.dir/homework/S5/5.6.o" "gcc" "CMakeFiles/5.6.dir/homework/S5/5.6.o.d"
   )
 
 # Targets to which this target links.

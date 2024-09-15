@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/p1.dir/examples/p1.o -o p1 
+/usr/bin/gcc -g -rdynamic CMakeFiles/p1.dir/examples/S5/p1.o -o p1 

@@ -69,28 +69,28 @@ include CMakeFiles/mem.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mem.dir/flags.make
 
-CMakeFiles/mem.dir/examples/mem.o: CMakeFiles/mem.dir/flags.make
-CMakeFiles/mem.dir/examples/mem.o: /home/singer/learn/ostp/examples/mem.c
-CMakeFiles/mem.dir/examples/mem.o: CMakeFiles/mem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mem.dir/examples/mem.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mem.dir/examples/mem.o -MF CMakeFiles/mem.dir/examples/mem.o.d -o CMakeFiles/mem.dir/examples/mem.o -c /home/singer/learn/ostp/examples/mem.c
+CMakeFiles/mem.dir/examples/S5/mem.o: CMakeFiles/mem.dir/flags.make
+CMakeFiles/mem.dir/examples/S5/mem.o: /home/singer/learn/ostp/examples/S5/mem.c
+CMakeFiles/mem.dir/examples/S5/mem.o: CMakeFiles/mem.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mem.dir/examples/S5/mem.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mem.dir/examples/S5/mem.o -MF CMakeFiles/mem.dir/examples/S5/mem.o.d -o CMakeFiles/mem.dir/examples/S5/mem.o -c /home/singer/learn/ostp/examples/S5/mem.c
 
-CMakeFiles/mem.dir/examples/mem.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mem.dir/examples/mem.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/mem.c > CMakeFiles/mem.dir/examples/mem.i
+CMakeFiles/mem.dir/examples/S5/mem.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mem.dir/examples/S5/mem.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/singer/learn/ostp/examples/S5/mem.c > CMakeFiles/mem.dir/examples/S5/mem.i
 
-CMakeFiles/mem.dir/examples/mem.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mem.dir/examples/mem.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/mem.c -o CMakeFiles/mem.dir/examples/mem.s
+CMakeFiles/mem.dir/examples/S5/mem.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mem.dir/examples/S5/mem.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/singer/learn/ostp/examples/S5/mem.c -o CMakeFiles/mem.dir/examples/S5/mem.s
 
 # Object files for target mem
 mem_OBJECTS = \
-"CMakeFiles/mem.dir/examples/mem.o"
+"CMakeFiles/mem.dir/examples/S5/mem.o"
 
 # External object files for target mem
 mem_EXTERNAL_OBJECTS =
 
-mem: CMakeFiles/mem.dir/examples/mem.o
+mem: CMakeFiles/mem.dir/examples/S5/mem.o
 mem: CMakeFiles/mem.dir/build.make
 mem: CMakeFiles/mem.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable mem"

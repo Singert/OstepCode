@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p3.dir/examples/p3.o"
-  "CMakeFiles/p3.dir/examples/p3.o.d"
+  "CMakeFiles/p3.dir/examples/S5/p3.o"
+  "CMakeFiles/p3.dir/examples/S5/p3.o.d"
   "p3"
   "p3.pdb"
 )

@@ -11,5 +11,7 @@
 /home/singer/learn/ostp/build/CMakeFiles/5.5.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.6.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.7.dir
+/home/singer/learn/ostp/build/CMakeFiles/5.8.dir
+/home/singer/learn/ostp/build/CMakeFiles/test.dir
 /home/singer/learn/ostp/build/CMakeFiles/edit_cache.dir
 /home/singer/learn/ostp/build/CMakeFiles/rebuild_cache.dir

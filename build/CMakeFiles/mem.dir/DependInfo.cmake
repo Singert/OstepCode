@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/singer/learn/ostp/examples/mem.c" "CMakeFiles/mem.dir/examples/mem.o" "gcc" "CMakeFiles/mem.dir/examples/mem.o.d"
+  "/home/singer/learn/ostp/examples/S5/mem.c" "CMakeFiles/mem.dir/examples/S5/mem.o" "gcc" "CMakeFiles/mem.dir/examples/S5/mem.o.d"
   )
 
 # Targets to which this target links.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "5.6"
   "5.6.pdb"
-  "CMakeFiles/5.6.dir/homework/5.6.o"
-  "CMakeFiles/5.6.dir/homework/5.6.o.d"
+  "CMakeFiles/5.6.dir/homework/S5/5.6.o"
+  "CMakeFiles/5.6.dir/homework/S5/5.6.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
