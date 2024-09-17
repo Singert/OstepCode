@@ -1,5 +1,6 @@
 // S6作业之测量cpu执行上下文切换时间；
-//半成品
+//成品
+// 多关闭了一次读端和写端导致不成功，已纠错
 #include <bits/types/idtype_t.h>
 # define _GNU_SOURCE
 
@@ -27,33 +28,36 @@ int main(int argc, char *argv[])
         int pipefd[2];
         pid_t pid;
         pid = fork();
+        if(pid < 0)
+        {
+            fprintf(stderr,"fork failed\n");
+            exit(1);
+        }else{printf("test\n");}
         if (pipe(pipefd) < 0 )    
         {
-            fprintf(stderr,"pipe failed");
+            fprintf(stderr,"pipe failed\n");
             exit(0);
         }   
         else 
         {
-            // while(1)
-            // {
-                if(pid < 0)
-                {
-                    fprintf(stderr,"fork failed");
-                    exit(1);
-                }
-                else if(pid == 0)
+            int cnt = 0;
+            while(cnt < 100000)
+            {
+                cnt++;
+                printf("cnt=%d",cnt);
+
+                if(pid == 0)
                 {
                     close(pipefd[0]);
                     if(write(pipefd[1],NULL,NULL) < 0)
                     {
-                        fprintf(stderr,"fork failed");
+                        fprintf(stderr,"fork failed\n");
                         exit(1);  
                     }
                     else 
                     {
                         printf("NULL pass success\n");
                     }
-                    close(pipefd[1]);
                 }
                 else
                 {
@@ -61,15 +65,14 @@ int main(int argc, char *argv[])
                     close(pipefd[1]);
                     if (read(pipefd[0],NULL,NULL) < 0)
                     {
-                        fprintf(stderr,"fork failed");
+                        fprintf(stderr,"fork failed\n");
                         exit(1);
                     }
                     else 
                     {
                         printf("NULL receive successs\n");
                     }
-                    close(pipefd[0]);
-                // }
+                }
             }
         }
     }
