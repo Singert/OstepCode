@@ -221,6 +221,19 @@ virtualized/fast:
 .PHONY : virtualized/fast
 
 #=============================================================================
+# Target rules for targets named array
+
+# Build rule for target.
+array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 array
+.PHONY : array
+
+# fast build rule for target.
+array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/build
+.PHONY : array/fast
+
+#=============================================================================
 # Target rules for targets named 5.1
 
 # Build rule for target.
@@ -364,6 +377,21 @@ examples/S13/virtualized.i:
 examples/S13/virtualized.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.s
 .PHONY : examples/S13/virtualized.s
+
+# target to build an object file
+examples/S18/array.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.o
+.PHONY : examples/S18/array.o
+
+# target to preprocess a source file
+examples/S18/array.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.i
+.PHONY : examples/S18/array.i
+
+# target to generate assembly for a file
+examples/S18/array.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.s
+.PHONY : examples/S18/array.s
 
 # target to build an object file
 examples/S5/cpu.o:
@@ -635,6 +663,7 @@ help:
 	@echo "... 5.6"
 	@echo "... 5.7"
 	@echo "... 5.8"
+	@echo "... array"
 	@echo "... cpu"
 	@echo "... measurement"
 	@echo "... mem"
@@ -649,6 +678,9 @@ help:
 	@echo "... examples/S13/virtualized.o"
 	@echo "... examples/S13/virtualized.i"
 	@echo "... examples/S13/virtualized.s"
+	@echo "... examples/S18/array.o"
+	@echo "... examples/S18/array.i"
+	@echo "... examples/S18/array.s"
 	@echo "... examples/S5/cpu.o"
 	@echo "... examples/S5/cpu.i"
 	@echo "... examples/S5/cpu.s"

@@ -41,6 +41,11 @@
 },
 {
   "directory": "/home/singer/learn/ostp/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/array.dir/examples/S18/array.o -c /home/singer/learn/ostp/examples/S18/array.c",
+  "file": "/home/singer/learn/ostp/examples/S18/array.c"
+},
+{
+  "directory": "/home/singer/learn/ostp/build",
   "command": "/usr/bin/gcc   -g -o CMakeFiles/5.1.dir/homework/S5/5.1.o -c /home/singer/learn/ostp/homework/S5/5.1.c",
   "file": "/home/singer/learn/ostp/homework/S5/5.1.c"
 },

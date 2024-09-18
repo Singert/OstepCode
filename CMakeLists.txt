@@ -9,7 +9,7 @@ add_executable(p2 examples/S5/p2.c)
 add_executable(p3 examples/S5/p3.c)
 add_executable(p4 examples/S5/p4.c)
 add_executable(virtualized examples/S13/virtualized.c)
-
+add_executable(array examples/S18/array.c)
 
 add_executable(5.1 homework/S5/5.1.c)
 add_executable(5.2 homework/S5/5.2.c)

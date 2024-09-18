@@ -6,6 +6,7 @@
 /home/singer/learn/ostp/build/CMakeFiles/p3.dir
 /home/singer/learn/ostp/build/CMakeFiles/p4.dir
 /home/singer/learn/ostp/build/CMakeFiles/virtualized.dir
+/home/singer/learn/ostp/build/CMakeFiles/array.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.1.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.2.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.3.dir
