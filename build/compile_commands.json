@@ -36,6 +36,11 @@
 },
 {
   "directory": "/home/singer/learn/ostp/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/virtualized.dir/examples/S13/virtualized.o -c /home/singer/learn/ostp/examples/S13/virtualized.c",
+  "file": "/home/singer/learn/ostp/examples/S13/virtualized.c"
+},
+{
+  "directory": "/home/singer/learn/ostp/build",
   "command": "/usr/bin/gcc   -g -o CMakeFiles/5.1.dir/homework/S5/5.1.o -c /home/singer/learn/ostp/homework/S5/5.1.c",
   "file": "/home/singer/learn/ostp/homework/S5/5.1.c"
 },
@@ -78,5 +83,10 @@
   "directory": "/home/singer/learn/ostp/build",
   "command": "/usr/bin/gcc   -g -o CMakeFiles/measurement.dir/homework/S6/measurement.o -c /home/singer/learn/ostp/homework/S6/measurement.c",
   "file": "/home/singer/learn/ostp/homework/S6/measurement.c"
+},
+{
+  "directory": "/home/singer/learn/ostp/build",
+  "command": "/usr/bin/gcc   -g -o CMakeFiles/null.dir/homework/S14/null.o -c /home/singer/learn/ostp/homework/S14/null.c",
+  "file": "/home/singer/learn/ostp/homework/S14/null.c"
 }
 ]

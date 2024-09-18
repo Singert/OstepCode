@@ -8,6 +8,7 @@ add_executable(p1 examples/S5/p1.c)
 add_executable(p2 examples/S5/p2.c)
 add_executable(p3 examples/S5/p3.c)
 add_executable(p4 examples/S5/p4.c)
+add_executable(virtualized examples/S13/virtualized.c)
 
 
 add_executable(5.1 homework/S5/5.1.c)
@@ -19,6 +20,7 @@ add_executable(5.7 homework/S5/5.7.c)
 add_executable(5.8 homework/S5/5.8.c)
 add_executable(test homework/S5/test.c)
 add_executable(measurement homework/S6/measurement.c)
+add_executable(null homework/S14/null.c)
 
 add_compile_options(-Wall -Wextra -Werror -pthread)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

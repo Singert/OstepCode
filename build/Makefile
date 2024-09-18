@@ -208,6 +208,19 @@ p4/fast:
 .PHONY : p4/fast
 
 #=============================================================================
+# Target rules for targets named virtualized
+
+# Build rule for target.
+virtualized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 virtualized
+.PHONY : virtualized
+
+# fast build rule for target.
+virtualized/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/build
+.PHONY : virtualized/fast
+
+#=============================================================================
 # Target rules for targets named 5.1
 
 # Build rule for target.
@@ -324,6 +337,34 @@ measurement/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/build
 .PHONY : measurement/fast
 
+#=============================================================================
+# Target rules for targets named null
+
+# Build rule for target.
+null: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 null
+.PHONY : null
+
+# fast build rule for target.
+null/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/build
+.PHONY : null/fast
+
+# target to build an object file
+examples/S13/virtualized.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.o
+.PHONY : examples/S13/virtualized.o
+
+# target to preprocess a source file
+examples/S13/virtualized.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.i
+.PHONY : examples/S13/virtualized.i
+
+# target to generate assembly for a file
+examples/S13/virtualized.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.s
+.PHONY : examples/S13/virtualized.s
+
 # target to build an object file
 examples/S5/cpu.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.o
@@ -428,6 +469,21 @@ examples/S5/threads.i:
 examples/S5/threads.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.s
 .PHONY : examples/S5/threads.s
+
+# target to build an object file
+homework/S14/null.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.o
+.PHONY : homework/S14/null.o
+
+# target to preprocess a source file
+homework/S14/null.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.i
+.PHONY : homework/S14/null.i
+
+# target to generate assembly for a file
+homework/S14/null.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.s
+.PHONY : homework/S14/null.s
 
 # target to build an object file
 homework/S5/5.1.o:
@@ -582,12 +638,17 @@ help:
 	@echo "... cpu"
 	@echo "... measurement"
 	@echo "... mem"
+	@echo "... null"
 	@echo "... p1"
 	@echo "... p2"
 	@echo "... p3"
 	@echo "... p4"
 	@echo "... test"
 	@echo "... threads"
+	@echo "... virtualized"
+	@echo "... examples/S13/virtualized.o"
+	@echo "... examples/S13/virtualized.i"
+	@echo "... examples/S13/virtualized.s"
 	@echo "... examples/S5/cpu.o"
 	@echo "... examples/S5/cpu.i"
 	@echo "... examples/S5/cpu.s"
@@ -609,6 +670,9 @@ help:
 	@echo "... examples/S5/threads.o"
 	@echo "... examples/S5/threads.i"
 	@echo "... examples/S5/threads.s"
+	@echo "... homework/S14/null.o"
+	@echo "... homework/S14/null.i"
+	@echo "... homework/S14/null.s"
 	@echo "... homework/S5/5.1.o"
 	@echo "... homework/S5/5.1.i"
 	@echo "... homework/S5/5.1.s"

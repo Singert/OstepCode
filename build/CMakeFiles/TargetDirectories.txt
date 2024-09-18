@@ -5,6 +5,7 @@
 /home/singer/learn/ostp/build/CMakeFiles/p2.dir
 /home/singer/learn/ostp/build/CMakeFiles/p3.dir
 /home/singer/learn/ostp/build/CMakeFiles/p4.dir
+/home/singer/learn/ostp/build/CMakeFiles/virtualized.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.1.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.2.dir
 /home/singer/learn/ostp/build/CMakeFiles/5.3.dir
@@ -14,5 +15,6 @@
 /home/singer/learn/ostp/build/CMakeFiles/5.8.dir
 /home/singer/learn/ostp/build/CMakeFiles/test.dir
 /home/singer/learn/ostp/build/CMakeFiles/measurement.dir
+/home/singer/learn/ostp/build/CMakeFiles/null.dir
 /home/singer/learn/ostp/build/CMakeFiles/edit_cache.dir
 /home/singer/learn/ostp/build/CMakeFiles/rebuild_cache.dir

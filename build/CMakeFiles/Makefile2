@@ -70,6 +70,7 @@ all: CMakeFiles/p1.dir/all
 all: CMakeFiles/p2.dir/all
 all: CMakeFiles/p3.dir/all
 all: CMakeFiles/p4.dir/all
+all: CMakeFiles/virtualized.dir/all
 all: CMakeFiles/5.1.dir/all
 all: CMakeFiles/5.2.dir/all
 all: CMakeFiles/5.3.dir/all
@@ -79,6 +80,7 @@ all: CMakeFiles/5.7.dir/all
 all: CMakeFiles/5.8.dir/all
 all: CMakeFiles/test.dir/all
 all: CMakeFiles/measurement.dir/all
+all: CMakeFiles/null.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -93,6 +95,7 @@ clean: CMakeFiles/p1.dir/clean
 clean: CMakeFiles/p2.dir/clean
 clean: CMakeFiles/p3.dir/clean
 clean: CMakeFiles/p4.dir/clean
+clean: CMakeFiles/virtualized.dir/clean
 clean: CMakeFiles/5.1.dir/clean
 clean: CMakeFiles/5.2.dir/clean
 clean: CMakeFiles/5.3.dir/clean
@@ -102,6 +105,7 @@ clean: CMakeFiles/5.7.dir/clean
 clean: CMakeFiles/5.8.dir/clean
 clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/measurement.dir/clean
+clean: CMakeFiles/null.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -163,7 +167,7 @@ CMakeFiles/mem.dir/clean:
 CMakeFiles/threads.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=31,32 "Built target threads"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=33,34 "Built target threads"
 .PHONY : CMakeFiles/threads.dir/all
 
 # Build rule for subdir invocation for target.
@@ -189,7 +193,7 @@ CMakeFiles/threads.dir/clean:
 CMakeFiles/p1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=21,22 "Built target p1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=23,24 "Built target p1"
 .PHONY : CMakeFiles/p1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -215,7 +219,7 @@ CMakeFiles/p1.dir/clean:
 CMakeFiles/p2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=23,24 "Built target p2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=25,26 "Built target p2"
 .PHONY : CMakeFiles/p2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -241,7 +245,7 @@ CMakeFiles/p2.dir/clean:
 CMakeFiles/p3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=25,26 "Built target p3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=27,28 "Built target p3"
 .PHONY : CMakeFiles/p3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,7 +271,7 @@ CMakeFiles/p3.dir/clean:
 CMakeFiles/p4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=27,28 "Built target p4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=29,30 "Built target p4"
 .PHONY : CMakeFiles/p4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -285,6 +289,32 @@ p4: CMakeFiles/p4.dir/rule
 CMakeFiles/p4.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/clean
 .PHONY : CMakeFiles/p4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/virtualized.dir
+
+# All Build rule for target.
+CMakeFiles/virtualized.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=35,36 "Built target virtualized"
+.PHONY : CMakeFiles/virtualized.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/virtualized.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/virtualized.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles 0
+.PHONY : CMakeFiles/virtualized.dir/rule
+
+# Convenience name for target.
+virtualized: CMakeFiles/virtualized.dir/rule
+.PHONY : virtualized
+
+# clean rule for target.
+CMakeFiles/virtualized.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/clean
+.PHONY : CMakeFiles/virtualized.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/5.1.dir
@@ -475,7 +505,7 @@ CMakeFiles/5.8.dir/clean:
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=29,30 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=31,32 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -519,6 +549,32 @@ measurement: CMakeFiles/measurement.dir/rule
 CMakeFiles/measurement.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/clean
 .PHONY : CMakeFiles/measurement.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/null.dir
+
+# All Build rule for target.
+CMakeFiles/null.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/singer/learn/ostp/build/CMakeFiles --progress-num=21,22 "Built target null"
+.PHONY : CMakeFiles/null.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/null.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/null.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles 0
+.PHONY : CMakeFiles/null.dir/rule
+
+# Convenience name for target.
+null: CMakeFiles/null.dir/rule
+.PHONY : null
+
+# clean rule for target.
+CMakeFiles/null.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/clean
+.PHONY : CMakeFiles/null.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
