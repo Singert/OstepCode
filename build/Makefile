@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/singer/learn/ostp
+CMAKE_SOURCE_DIR = /home/singer/project/learn/OstepCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/singer/learn/ostp/build
+CMAKE_BINARY_DIR = /home/singer/project/learn/OstepCode/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles /home/singer/learn/ostp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/project/learn/OstepCode/build/CMakeFiles /home/singer/project/learn/OstepCode/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/learn/ostp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/singer/project/learn/OstepCode/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -234,6 +234,19 @@ array/fast:
 .PHONY : array/fast
 
 #=============================================================================
+# Target rules for targets named counter
+
+# Build rule for target.
+counter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 counter
+.PHONY : counter
+
+# fast build rule for target.
+counter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/build
+.PHONY : counter/fast
+
+#=============================================================================
 # Target rules for targets named 5.1
 
 # Build rule for target.
@@ -363,290 +376,485 @@ null/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/build
 .PHONY : null/fast
 
-# target to build an object file
-examples/S13/virtualized.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.o
+examples/S13/virtualized.o: examples/S13/virtualized.c.o
 .PHONY : examples/S13/virtualized.o
 
-# target to preprocess a source file
-examples/S13/virtualized.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.i
+# target to build an object file
+examples/S13/virtualized.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.c.o
+.PHONY : examples/S13/virtualized.c.o
+
+examples/S13/virtualized.i: examples/S13/virtualized.c.i
 .PHONY : examples/S13/virtualized.i
 
-# target to generate assembly for a file
-examples/S13/virtualized.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.s
+# target to preprocess a source file
+examples/S13/virtualized.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.c.i
+.PHONY : examples/S13/virtualized.c.i
+
+examples/S13/virtualized.s: examples/S13/virtualized.c.s
 .PHONY : examples/S13/virtualized.s
 
-# target to build an object file
-examples/S18/array.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.o
+# target to generate assembly for a file
+examples/S13/virtualized.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/virtualized.dir/build.make CMakeFiles/virtualized.dir/examples/S13/virtualized.c.s
+.PHONY : examples/S13/virtualized.c.s
+
+examples/S18/array.o: examples/S18/array.c.o
 .PHONY : examples/S18/array.o
 
-# target to preprocess a source file
-examples/S18/array.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.i
+# target to build an object file
+examples/S18/array.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.c.o
+.PHONY : examples/S18/array.c.o
+
+examples/S18/array.i: examples/S18/array.c.i
 .PHONY : examples/S18/array.i
 
-# target to generate assembly for a file
-examples/S18/array.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.s
+# target to preprocess a source file
+examples/S18/array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.c.i
+.PHONY : examples/S18/array.c.i
+
+examples/S18/array.s: examples/S18/array.c.s
 .PHONY : examples/S18/array.s
 
+# target to generate assembly for a file
+examples/S18/array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/array.dir/build.make CMakeFiles/array.dir/examples/S18/array.c.s
+.PHONY : examples/S18/array.c.s
+
+examples/S29/conc_counter.o: examples/S29/conc_counter.c.o
+.PHONY : examples/S29/conc_counter.o
+
 # target to build an object file
-examples/S5/cpu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.o
+examples/S29/conc_counter.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/examples/S29/conc_counter.c.o
+.PHONY : examples/S29/conc_counter.c.o
+
+examples/S29/conc_counter.i: examples/S29/conc_counter.c.i
+.PHONY : examples/S29/conc_counter.i
+
+# target to preprocess a source file
+examples/S29/conc_counter.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/examples/S29/conc_counter.c.i
+.PHONY : examples/S29/conc_counter.c.i
+
+examples/S29/conc_counter.s: examples/S29/conc_counter.c.s
+.PHONY : examples/S29/conc_counter.s
+
+# target to generate assembly for a file
+examples/S29/conc_counter.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter.dir/build.make CMakeFiles/counter.dir/examples/S29/conc_counter.c.s
+.PHONY : examples/S29/conc_counter.c.s
+
+examples/S5/cpu.o: examples/S5/cpu.c.o
 .PHONY : examples/S5/cpu.o
 
-# target to preprocess a source file
-examples/S5/cpu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.i
+# target to build an object file
+examples/S5/cpu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.c.o
+.PHONY : examples/S5/cpu.c.o
+
+examples/S5/cpu.i: examples/S5/cpu.c.i
 .PHONY : examples/S5/cpu.i
 
-# target to generate assembly for a file
-examples/S5/cpu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.s
+# target to preprocess a source file
+examples/S5/cpu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.c.i
+.PHONY : examples/S5/cpu.c.i
+
+examples/S5/cpu.s: examples/S5/cpu.c.s
 .PHONY : examples/S5/cpu.s
 
-# target to build an object file
-examples/S5/mem.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.o
+# target to generate assembly for a file
+examples/S5/cpu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpu.dir/build.make CMakeFiles/cpu.dir/examples/S5/cpu.c.s
+.PHONY : examples/S5/cpu.c.s
+
+examples/S5/mem.o: examples/S5/mem.c.o
 .PHONY : examples/S5/mem.o
 
-# target to preprocess a source file
-examples/S5/mem.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.i
+# target to build an object file
+examples/S5/mem.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.c.o
+.PHONY : examples/S5/mem.c.o
+
+examples/S5/mem.i: examples/S5/mem.c.i
 .PHONY : examples/S5/mem.i
 
-# target to generate assembly for a file
-examples/S5/mem.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.s
+# target to preprocess a source file
+examples/S5/mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.c.i
+.PHONY : examples/S5/mem.c.i
+
+examples/S5/mem.s: examples/S5/mem.c.s
 .PHONY : examples/S5/mem.s
 
-# target to build an object file
-examples/S5/p1.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.o
+# target to generate assembly for a file
+examples/S5/mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mem.dir/build.make CMakeFiles/mem.dir/examples/S5/mem.c.s
+.PHONY : examples/S5/mem.c.s
+
+examples/S5/p1.o: examples/S5/p1.c.o
 .PHONY : examples/S5/p1.o
 
-# target to preprocess a source file
-examples/S5/p1.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.i
+# target to build an object file
+examples/S5/p1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.c.o
+.PHONY : examples/S5/p1.c.o
+
+examples/S5/p1.i: examples/S5/p1.c.i
 .PHONY : examples/S5/p1.i
 
-# target to generate assembly for a file
-examples/S5/p1.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.s
+# target to preprocess a source file
+examples/S5/p1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.c.i
+.PHONY : examples/S5/p1.c.i
+
+examples/S5/p1.s: examples/S5/p1.c.s
 .PHONY : examples/S5/p1.s
 
-# target to build an object file
-examples/S5/p2.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.o
+# target to generate assembly for a file
+examples/S5/p1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p1.dir/build.make CMakeFiles/p1.dir/examples/S5/p1.c.s
+.PHONY : examples/S5/p1.c.s
+
+examples/S5/p2.o: examples/S5/p2.c.o
 .PHONY : examples/S5/p2.o
 
-# target to preprocess a source file
-examples/S5/p2.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.i
+# target to build an object file
+examples/S5/p2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.c.o
+.PHONY : examples/S5/p2.c.o
+
+examples/S5/p2.i: examples/S5/p2.c.i
 .PHONY : examples/S5/p2.i
 
-# target to generate assembly for a file
-examples/S5/p2.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.s
+# target to preprocess a source file
+examples/S5/p2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.c.i
+.PHONY : examples/S5/p2.c.i
+
+examples/S5/p2.s: examples/S5/p2.c.s
 .PHONY : examples/S5/p2.s
 
-# target to build an object file
-examples/S5/p3.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.o
+# target to generate assembly for a file
+examples/S5/p2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p2.dir/build.make CMakeFiles/p2.dir/examples/S5/p2.c.s
+.PHONY : examples/S5/p2.c.s
+
+examples/S5/p3.o: examples/S5/p3.c.o
 .PHONY : examples/S5/p3.o
 
-# target to preprocess a source file
-examples/S5/p3.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.i
+# target to build an object file
+examples/S5/p3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.c.o
+.PHONY : examples/S5/p3.c.o
+
+examples/S5/p3.i: examples/S5/p3.c.i
 .PHONY : examples/S5/p3.i
 
-# target to generate assembly for a file
-examples/S5/p3.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.s
+# target to preprocess a source file
+examples/S5/p3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.c.i
+.PHONY : examples/S5/p3.c.i
+
+examples/S5/p3.s: examples/S5/p3.c.s
 .PHONY : examples/S5/p3.s
 
-# target to build an object file
-examples/S5/p4.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.o
+# target to generate assembly for a file
+examples/S5/p3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p3.dir/build.make CMakeFiles/p3.dir/examples/S5/p3.c.s
+.PHONY : examples/S5/p3.c.s
+
+examples/S5/p4.o: examples/S5/p4.c.o
 .PHONY : examples/S5/p4.o
 
-# target to preprocess a source file
-examples/S5/p4.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.i
+# target to build an object file
+examples/S5/p4.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.c.o
+.PHONY : examples/S5/p4.c.o
+
+examples/S5/p4.i: examples/S5/p4.c.i
 .PHONY : examples/S5/p4.i
 
-# target to generate assembly for a file
-examples/S5/p4.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.s
+# target to preprocess a source file
+examples/S5/p4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.c.i
+.PHONY : examples/S5/p4.c.i
+
+examples/S5/p4.s: examples/S5/p4.c.s
 .PHONY : examples/S5/p4.s
 
-# target to build an object file
-examples/S5/threads.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.o
+# target to generate assembly for a file
+examples/S5/p4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4.dir/build.make CMakeFiles/p4.dir/examples/S5/p4.c.s
+.PHONY : examples/S5/p4.c.s
+
+examples/S5/threads.o: examples/S5/threads.c.o
 .PHONY : examples/S5/threads.o
 
-# target to preprocess a source file
-examples/S5/threads.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.i
+# target to build an object file
+examples/S5/threads.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.c.o
+.PHONY : examples/S5/threads.c.o
+
+examples/S5/threads.i: examples/S5/threads.c.i
 .PHONY : examples/S5/threads.i
 
-# target to generate assembly for a file
-examples/S5/threads.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.s
+# target to preprocess a source file
+examples/S5/threads.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.c.i
+.PHONY : examples/S5/threads.c.i
+
+examples/S5/threads.s: examples/S5/threads.c.s
 .PHONY : examples/S5/threads.s
 
-# target to build an object file
-homework/S14/null.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.o
+# target to generate assembly for a file
+examples/S5/threads.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/threads.dir/build.make CMakeFiles/threads.dir/examples/S5/threads.c.s
+.PHONY : examples/S5/threads.c.s
+
+homework/S14/null.o: homework/S14/null.c.o
 .PHONY : homework/S14/null.o
 
-# target to preprocess a source file
-homework/S14/null.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.i
+# target to build an object file
+homework/S14/null.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.c.o
+.PHONY : homework/S14/null.c.o
+
+homework/S14/null.i: homework/S14/null.c.i
 .PHONY : homework/S14/null.i
 
-# target to generate assembly for a file
-homework/S14/null.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.s
+# target to preprocess a source file
+homework/S14/null.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.c.i
+.PHONY : homework/S14/null.c.i
+
+homework/S14/null.s: homework/S14/null.c.s
 .PHONY : homework/S14/null.s
 
-# target to build an object file
-homework/S5/5.1.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.o
+# target to generate assembly for a file
+homework/S14/null.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/null.dir/build.make CMakeFiles/null.dir/homework/S14/null.c.s
+.PHONY : homework/S14/null.c.s
+
+homework/S5/5.1.o: homework/S5/5.1.c.o
 .PHONY : homework/S5/5.1.o
 
-# target to preprocess a source file
-homework/S5/5.1.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.i
+# target to build an object file
+homework/S5/5.1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.c.o
+.PHONY : homework/S5/5.1.c.o
+
+homework/S5/5.1.i: homework/S5/5.1.c.i
 .PHONY : homework/S5/5.1.i
 
-# target to generate assembly for a file
-homework/S5/5.1.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.s
+# target to preprocess a source file
+homework/S5/5.1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.c.i
+.PHONY : homework/S5/5.1.c.i
+
+homework/S5/5.1.s: homework/S5/5.1.c.s
 .PHONY : homework/S5/5.1.s
 
-# target to build an object file
-homework/S5/5.2.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.o
+# target to generate assembly for a file
+homework/S5/5.1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.1.dir/build.make CMakeFiles/5.1.dir/homework/S5/5.1.c.s
+.PHONY : homework/S5/5.1.c.s
+
+homework/S5/5.2.o: homework/S5/5.2.c.o
 .PHONY : homework/S5/5.2.o
 
-# target to preprocess a source file
-homework/S5/5.2.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.i
+# target to build an object file
+homework/S5/5.2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.c.o
+.PHONY : homework/S5/5.2.c.o
+
+homework/S5/5.2.i: homework/S5/5.2.c.i
 .PHONY : homework/S5/5.2.i
 
-# target to generate assembly for a file
-homework/S5/5.2.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.s
+# target to preprocess a source file
+homework/S5/5.2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.c.i
+.PHONY : homework/S5/5.2.c.i
+
+homework/S5/5.2.s: homework/S5/5.2.c.s
 .PHONY : homework/S5/5.2.s
 
-# target to build an object file
-homework/S5/5.3.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.o
+# target to generate assembly for a file
+homework/S5/5.2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.2.dir/build.make CMakeFiles/5.2.dir/homework/S5/5.2.c.s
+.PHONY : homework/S5/5.2.c.s
+
+homework/S5/5.3.o: homework/S5/5.3.c.o
 .PHONY : homework/S5/5.3.o
 
-# target to preprocess a source file
-homework/S5/5.3.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.i
+# target to build an object file
+homework/S5/5.3.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.c.o
+.PHONY : homework/S5/5.3.c.o
+
+homework/S5/5.3.i: homework/S5/5.3.c.i
 .PHONY : homework/S5/5.3.i
 
-# target to generate assembly for a file
-homework/S5/5.3.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.s
+# target to preprocess a source file
+homework/S5/5.3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.c.i
+.PHONY : homework/S5/5.3.c.i
+
+homework/S5/5.3.s: homework/S5/5.3.c.s
 .PHONY : homework/S5/5.3.s
 
-# target to build an object file
-homework/S5/5.5.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.o
+# target to generate assembly for a file
+homework/S5/5.3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.3.dir/build.make CMakeFiles/5.3.dir/homework/S5/5.3.c.s
+.PHONY : homework/S5/5.3.c.s
+
+homework/S5/5.5.o: homework/S5/5.5.c.o
 .PHONY : homework/S5/5.5.o
 
-# target to preprocess a source file
-homework/S5/5.5.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.i
+# target to build an object file
+homework/S5/5.5.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.c.o
+.PHONY : homework/S5/5.5.c.o
+
+homework/S5/5.5.i: homework/S5/5.5.c.i
 .PHONY : homework/S5/5.5.i
 
-# target to generate assembly for a file
-homework/S5/5.5.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.s
+# target to preprocess a source file
+homework/S5/5.5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.c.i
+.PHONY : homework/S5/5.5.c.i
+
+homework/S5/5.5.s: homework/S5/5.5.c.s
 .PHONY : homework/S5/5.5.s
 
-# target to build an object file
-homework/S5/5.6.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.o
+# target to generate assembly for a file
+homework/S5/5.5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.5.dir/build.make CMakeFiles/5.5.dir/homework/S5/5.5.c.s
+.PHONY : homework/S5/5.5.c.s
+
+homework/S5/5.6.o: homework/S5/5.6.c.o
 .PHONY : homework/S5/5.6.o
 
-# target to preprocess a source file
-homework/S5/5.6.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.i
+# target to build an object file
+homework/S5/5.6.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.c.o
+.PHONY : homework/S5/5.6.c.o
+
+homework/S5/5.6.i: homework/S5/5.6.c.i
 .PHONY : homework/S5/5.6.i
 
-# target to generate assembly for a file
-homework/S5/5.6.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.s
+# target to preprocess a source file
+homework/S5/5.6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.c.i
+.PHONY : homework/S5/5.6.c.i
+
+homework/S5/5.6.s: homework/S5/5.6.c.s
 .PHONY : homework/S5/5.6.s
 
-# target to build an object file
-homework/S5/5.7.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.o
+# target to generate assembly for a file
+homework/S5/5.6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.6.dir/build.make CMakeFiles/5.6.dir/homework/S5/5.6.c.s
+.PHONY : homework/S5/5.6.c.s
+
+homework/S5/5.7.o: homework/S5/5.7.c.o
 .PHONY : homework/S5/5.7.o
 
-# target to preprocess a source file
-homework/S5/5.7.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.i
+# target to build an object file
+homework/S5/5.7.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.c.o
+.PHONY : homework/S5/5.7.c.o
+
+homework/S5/5.7.i: homework/S5/5.7.c.i
 .PHONY : homework/S5/5.7.i
 
-# target to generate assembly for a file
-homework/S5/5.7.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.s
+# target to preprocess a source file
+homework/S5/5.7.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.c.i
+.PHONY : homework/S5/5.7.c.i
+
+homework/S5/5.7.s: homework/S5/5.7.c.s
 .PHONY : homework/S5/5.7.s
 
-# target to build an object file
-homework/S5/5.8.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.o
+# target to generate assembly for a file
+homework/S5/5.7.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.7.dir/build.make CMakeFiles/5.7.dir/homework/S5/5.7.c.s
+.PHONY : homework/S5/5.7.c.s
+
+homework/S5/5.8.o: homework/S5/5.8.c.o
 .PHONY : homework/S5/5.8.o
 
-# target to preprocess a source file
-homework/S5/5.8.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.i
+# target to build an object file
+homework/S5/5.8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.c.o
+.PHONY : homework/S5/5.8.c.o
+
+homework/S5/5.8.i: homework/S5/5.8.c.i
 .PHONY : homework/S5/5.8.i
 
-# target to generate assembly for a file
-homework/S5/5.8.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.s
+# target to preprocess a source file
+homework/S5/5.8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.c.i
+.PHONY : homework/S5/5.8.c.i
+
+homework/S5/5.8.s: homework/S5/5.8.c.s
 .PHONY : homework/S5/5.8.s
 
-# target to build an object file
-homework/S5/test.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.o
+# target to generate assembly for a file
+homework/S5/5.8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/5.8.dir/build.make CMakeFiles/5.8.dir/homework/S5/5.8.c.s
+.PHONY : homework/S5/5.8.c.s
+
+homework/S5/test.o: homework/S5/test.c.o
 .PHONY : homework/S5/test.o
 
-# target to preprocess a source file
-homework/S5/test.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.i
+# target to build an object file
+homework/S5/test.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.c.o
+.PHONY : homework/S5/test.c.o
+
+homework/S5/test.i: homework/S5/test.c.i
 .PHONY : homework/S5/test.i
 
-# target to generate assembly for a file
-homework/S5/test.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.s
+# target to preprocess a source file
+homework/S5/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.c.i
+.PHONY : homework/S5/test.c.i
+
+homework/S5/test.s: homework/S5/test.c.s
 .PHONY : homework/S5/test.s
 
-# target to build an object file
-homework/S6/measurement.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.o
+# target to generate assembly for a file
+homework/S5/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/homework/S5/test.c.s
+.PHONY : homework/S5/test.c.s
+
+homework/S6/measurement.o: homework/S6/measurement.c.o
 .PHONY : homework/S6/measurement.o
 
-# target to preprocess a source file
-homework/S6/measurement.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.i
+# target to build an object file
+homework/S6/measurement.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.c.o
+.PHONY : homework/S6/measurement.c.o
+
+homework/S6/measurement.i: homework/S6/measurement.c.i
 .PHONY : homework/S6/measurement.i
 
-# target to generate assembly for a file
-homework/S6/measurement.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.s
+# target to preprocess a source file
+homework/S6/measurement.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.c.i
+.PHONY : homework/S6/measurement.c.i
+
+homework/S6/measurement.s: homework/S6/measurement.c.s
 .PHONY : homework/S6/measurement.s
+
+# target to generate assembly for a file
+homework/S6/measurement.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/measurement.dir/build.make CMakeFiles/measurement.dir/homework/S6/measurement.c.s
+.PHONY : homework/S6/measurement.c.s
 
 # Help Target
 help:
@@ -664,6 +872,7 @@ help:
 	@echo "... 5.7"
 	@echo "... 5.8"
 	@echo "... array"
+	@echo "... counter"
 	@echo "... cpu"
 	@echo "... measurement"
 	@echo "... mem"
@@ -681,6 +890,9 @@ help:
 	@echo "... examples/S18/array.o"
 	@echo "... examples/S18/array.i"
 	@echo "... examples/S18/array.s"
+	@echo "... examples/S29/conc_counter.o"
+	@echo "... examples/S29/conc_counter.i"
+	@echo "... examples/S29/conc_counter.s"
 	@echo "... examples/S5/cpu.o"
 	@echo "... examples/S5/cpu.i"
 	@echo "... examples/S5/cpu.s"

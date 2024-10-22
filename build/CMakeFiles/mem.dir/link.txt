@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/mem.dir/examples/S5/mem.o -o mem 
+/usr/bin/cc  -std=c11 CMakeFiles/mem.dir/examples/S5/mem.c.o -o mem 

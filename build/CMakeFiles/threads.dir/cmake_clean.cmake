@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/threads.dir/examples/S5/threads.o"
-  "CMakeFiles/threads.dir/examples/S5/threads.o.d"
+  "CMakeFiles/threads.dir/examples/S5/threads.c.o"
+  "CMakeFiles/threads.dir/examples/S5/threads.c.o.d"
   "threads"
   "threads.pdb"
 )

@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/5.3.dir/homework/S5/5.3.o -o 5.3 
+/usr/bin/cc  -std=c11 CMakeFiles/5.3.dir/homework/S5/5.3.c.o -o 5.3 

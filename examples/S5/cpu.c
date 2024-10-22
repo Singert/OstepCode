@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <sys/time.h>
 # include <assert.h>
-# include "../include/common.h"
+# include "../../include/common.h"
 
 int main(int argc, char *argv[])
 {

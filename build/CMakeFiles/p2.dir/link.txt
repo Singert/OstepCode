@@ -1,1 +1,1 @@
-/usr/bin/gcc -g -rdynamic CMakeFiles/p2.dir/examples/S5/p2.o -o p2 
+/usr/bin/cc  -std=c11 CMakeFiles/p2.dir/examples/S5/p2.c.o -o p2 

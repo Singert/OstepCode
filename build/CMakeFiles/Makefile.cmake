@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/singer/learn/ostp/CMakeLists.txt"
+  "/home/singer/project/learn/OstepCode/CMakeLists.txt"
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
@@ -52,6 +52,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/p4.dir/DependInfo.cmake"
   "CMakeFiles/virtualized.dir/DependInfo.cmake"
   "CMakeFiles/array.dir/DependInfo.cmake"
+  "CMakeFiles/counter.dir/DependInfo.cmake"
   "CMakeFiles/5.1.dir/DependInfo.cmake"
   "CMakeFiles/5.2.dir/DependInfo.cmake"
   "CMakeFiles/5.3.dir/DependInfo.cmake"

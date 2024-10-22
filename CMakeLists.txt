@@ -1,5 +1,9 @@
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 project(OSTP)
+cmake_minimum_required(VERSION 3.25)
+# set(CMAKE_C_STANDARD 11)
+# set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11")  # 或者使用其他版本，如 c99, c14, c17
+
 
 add_executable(cpu examples/S5/cpu.c)
 add_executable(mem examples/S5/mem.c)
@@ -10,6 +14,7 @@ add_executable(p3 examples/S5/p3.c)
 add_executable(p4 examples/S5/p4.c)
 add_executable(virtualized examples/S13/virtualized.c)
 add_executable(array examples/S18/array.c)
+add_executable(counter examples/S29/conc_counter.c)
 
 add_executable(5.1 homework/S5/5.1.c)
 add_executable(5.2 homework/S5/5.2.c)

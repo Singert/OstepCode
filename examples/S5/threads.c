@@ -1,7 +1,7 @@
 # include <stdio.h>
 # include <stdlib.h>
-# include "../include/common.h"
-# include "../include/common_thread.h"
+# include "../../include/common.h"
+# include "../../include/common_thread.h"
 
 volatile int counter = 0;
 int loops;
