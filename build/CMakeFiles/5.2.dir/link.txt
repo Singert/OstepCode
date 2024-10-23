@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=c11 CMakeFiles/5.2.dir/homework/S5/5.2.c.o -o 5.2 

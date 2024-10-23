@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=c11 CMakeFiles/p1.dir/examples/S5/p1.c.o -o p1 

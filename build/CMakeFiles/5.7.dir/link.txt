@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=c11 CMakeFiles/5.7.dir/homework/S5/5.7.c.o -o 5.7 

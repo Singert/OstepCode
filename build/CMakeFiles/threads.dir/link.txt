@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=c11 CMakeFiles/threads.dir/examples/S5/threads.c.o -o threads 

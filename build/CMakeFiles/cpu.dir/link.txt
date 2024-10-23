@@ -1,1 +1,0 @@
-/usr/bin/cc  -std=c11 CMakeFiles/cpu.dir/examples/S5/cpu.c.o -o cpu 

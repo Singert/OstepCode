@@ -17,7 +17,7 @@ typedef struct list_t
 void List_init(list_t*l)
 {
     l->head =NULL;
-    pthread_mutex_init(&l->lock);
+    pthread_mutex_init(&l->lock,NULL);
 }
 
 
