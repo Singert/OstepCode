@@ -11,12 +11,12 @@ void thr_exit()
 {
     pthread_mutex_lock(&m);
     done = 1;
-    pthread_cond_signal(&c);
+    pthread_cond_signal(&c);//在发信号时持有锁是最简单有效的办法。
     pthread_mutex_unlock(&m);
 }
 
 void *child(void *arg)
-{
+{   
     printf("child: %d",getpid());
     thr_exit();
     return NULL;
@@ -29,7 +29,7 @@ void thr_join(){
         pthread_cond_wait(&c,&m); 
         // 释放锁，并使调用线程休眠，当线程被唤醒时，wait()重新获取锁，返回给调用线程，避免线程休眠时出现竞态条件
     }
-    pthread_mutex_lock(&m);
+    pthread_mutex_unlock(&m);
 }
 
 

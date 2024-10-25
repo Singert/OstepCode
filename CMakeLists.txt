@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.25)
 # set(CMAKE_C_STANDARD 11)
 # set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11")  # 或者使用其他版本，如 c99, c14, c17
 
-
+add_executable(pthr_test examples/pthr_test.c)
 add_executable(cpu examples/S5/cpu.c)
 add_executable(mem examples/S5/mem.c)
 add_executable(threads examples/S5/threads.c)
