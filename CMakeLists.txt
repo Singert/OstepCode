@@ -18,6 +18,7 @@ add_executable(counter examples/S29/conc_counter.c)
 add_executable(condition examples/S30/condition.c)
 add_executable(spin_wait examples/S30/spin_wait.c)
 add_executable(condition_wait examples/S30/condition_wait.c)
+add_executable(signal examples/S31/signal.c)
 
 add_executable(5.1 homework/S5/5.1.c)
 add_executable(5.2 homework/S5/5.2.c)
